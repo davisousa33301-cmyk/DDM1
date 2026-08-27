@@ -67,7 +67,7 @@ export default function App() {
           Não tem login?
         </Text>
         <Pressable
-        onPress={ () => { alert("Enviado!") } }>
+        onPress={ () => { alert("problema seu!") } }>
         <Text
           style={{
             textAlign: 'center',
