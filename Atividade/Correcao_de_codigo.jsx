@@ -9,11 +9,10 @@ export default function App() {
     // Área segura para o conteúdo do aplicativo
     <SafeAreaProvider>
       <SafeAreaView style={styles.principal}>
-        {/*Exibe o logo do aplicativo*/}
-        <Image source={require('./logo.png')} style={styles.logo} />
 
-        {/*Título e descrição*/}
+        {/*Título, logo e descrição*/}
         <Text style={styles.titulo}>App de Estudos</Text>
+        <Image source={require('./logo.png')} style={styles.logo} />
         <Text style={styles.legenda}>Organize provas tarefas e revisões.</Text>
 
         {/*Caixa da matéria de Matemática*/}
@@ -53,7 +52,7 @@ const styles = StyleSheet.create({
   principal: {
     flex: 1, // Ocupa toda a tela
     padding: 20, // Espaço interno
-    gap: 7, // Espaço entre os elementos
+    gap: 10, // Espaço entre os elementos
     alignItems: 'center', // Centraliza os elementos
     backgroundColor: '#E8F6F840', // Cor de fundo
   },
@@ -86,6 +85,6 @@ const styles = StyleSheet.create({
   logo: {
     width: 100, // Largura da imagem
     height: 100, // Altura da imagem
-    borderRadius: 5, // Cantos arredondados
+
   },
 });
